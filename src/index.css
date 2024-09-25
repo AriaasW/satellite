@@ -1,0 +1,264 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light dark;
+  color: white;
+  background-color: #242424;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+p {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: verdana, serif;
+}
+
+.pp {
+  position: fixed;
+  top: 30%;
+  left: 50%;      
+  transform: translateX(-50%);
+}
+
+.start {
+  position: fixed;
+  top: 50%; 
+  left: 50%;      
+  transform: translateX(-50%);
+}
+
+.start button {
+  margin-right: 20px;
+}
+
+.refresh {
+  position: fixed;
+  top: 20px;       
+  left: 50%;      
+  transform: translateX(-50%);
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  background-color: #1a1a1a;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  color: #fff;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+.initial-parameters {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
+}
+
+.left-column, 
+.right-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.left-column {
+  width: 45%;
+}
+
+.right-column {
+  width: 45%;
+  align-items: center;
+}
+
+.left-column div, 
+.right-column div {
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+
+button:hover {
+  background-color: #004b99;
+}
+
+button:disabled {
+  background-color: gray;
+  cursor: not-allowed;
+}
+
+select, input {
+  padding: 10px;
+  font-size: 1em;
+  background-color: black;
+  color: white;
+  border: 1px solid blue;
+  border-radius: 5px;
+  width: 100%;
+}
+
+span {
+  font-size: 1.2em;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.error-message {
+  color: red;
+  font-size: 0.9em;
+}
+
+.day-picker-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.day-picker-wrapper .rdp {
+  font-size: 0.8em; /* Smaller date picker */
+}
+
+.submit-button {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px 20px;
+  font-size: 1.2em;
+}
+
+a {
+  font-weight: 500;
+  color: white;
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  background-image: url('https://images8.alphacoders.com/101/thumb-1920-1012935.jpg');
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+button:hover {
+  border-color: #646cff;
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+.satelite-container {
+  width: 400px;
+  height: 600px;
+  position: absolute;
+  top: 50%;
+  right: 10%;
+  transform: translateY(-50%);
+  border: 2px solid white;
+  z-index: 5;
+}
+
+.nasa-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.map-large {
+  width: 600px;
+  height: 450px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.3s ease;
+}
+
+.map-small {
+  width: 400px;
+  height: 450px;
+  position: absolute;
+  top: 20%;
+  left: 10%;
+}
+
+.generate-sat {
+  position: fixed;
+  bottom: 20px;       
+  left: 50%;      
+  transform: translateX(-50%);
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  background-color: #1a1a1a;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  color: #fff;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+.err {
+  position: absolute;
+  top: 50%;
+  right: 10%;
+  transform: translateY(-50%);
+  background-color: black;
+  border: 2px solid white;
+  padding: 20px;
+  max-width: 300px;
+  text-align: center;
+}
+
+.err span {
+  color: white;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: white;
+    background-color: #ffffff;
+  }
+
+  a:hover {
+    color: darkblue;
+  }
+
+  button {
+    background-color: #f9f9f9;
+  }
+}
